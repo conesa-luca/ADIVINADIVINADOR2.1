@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ADIVINADIVINADOR</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Adivinanza de Números</h1>
+        <p>Bienvenido al juego de adivinanza de números. ¿Podrás adivinar el número secreto entre 1 y 15?</p>
+        <p>Creado por Luca Conesa.</p>
+        <h2>Instrucciones:</h2>
+        <ul>
+            <li>Ingresa tu suposición en el campo de abajo.</li>
+            <li>Presiona "ELEGIR NÚMERO" para verificar tu suposición.</li>
+            <li>Tienes 10 intentos para adivinar el número correcto.</li>
+            <li>Si te quedas sin intentos, el juego se reiniciará automáticamente.</li>
+            <li>Puedes obtener una pista presionando "Obtener Pista".</li>
+            <li>Selecciona la dificultad: Fácil, Medio (predeterminado) o Difícil.</li>
+        </ul>
+      
+        <button id="checkButton">ELEGIR NÚMERO</button>
+        <button id="resetButton">Reiniciar Juego</button>
+        <button id="hintButton">Obtener Pista</button>
+        <p id="message"></p>
+        <p id="result"></p>
+        <p id="score"></p>
+        <p id="attempts"></p>
+        <p id="guessHistory"></p>
+        <p id="timeLeft">Tiempo restante: 10</p>
+        <select id="difficultySelect">
+            <option value="facil">Fácil</option>
+            <option value="medio" selected>Medio</option>
+            <option value="dificil">Difícil</option>
+        </select>
+        <p id="successfulAttempts">Intentos Exitosos: 0</p>
+        <div class="container">
+            <img id="wrong-image" src="https://tse2.explicit.bing.net/th?id=OIP.KmWbkbraAoZz_IdMGjCMGQAAAA&pid=Api&P=0&h=180" alt="Error">
+            <img id="correct-image" src="https://tse3.mm.bing.net/th?id=OIP.PN_hLS23JM9KMuuEloNFVAAAAA&pid=Api&P=0&h=180" alt="Correcto">
+        </div>
+        <hr>
+        <h2>Extras:</h2>
+        <ul>
+            <li>Comparte este juego con tus amigos y desafíalos a superar tu récord.</li>
+            <li>Experimenta con diferentes niveles de dificultad para un mayor desafío.</li>
+            <li>Envía tus ideas para mejorar el juego a Luca Conesa.</li>
+            <li>Mejora tus habilidades de adivinanza.</li>
+            <li>Explora más juegos emocionantes en nuestro sitio web.</li>
+            <li>Regístrate para recibir actualizaciones y noticias sobre nuestros juegos y desafíos.</li>
+            <li>Únete a la comunidad de jugadores en nuestro foro para compartir estrategias y trucos.</li>
+            <li>Descubre otros juegos y actividades relacionadas con matemáticas y lógica.</li>
+            <li>Aprende sobre el desarrollo de este juego en la sección "Acerca de nosotros".</li>
+            <li>Participa en eventos y competencias de nuestra comunidad.</li>
+            <li>Comparte tus comentarios y sugerencias en la sección "Opiniones de los jugadores".</li>
+            <li>Gana insignias y premios completando desafíos especiales en el juego.</li>
+            <li>Explora nuestro sitio web para encontrar más contenidos interesantes.</li>
+            <li>Síguenos en las redes sociales para obtener las últimas actualizaciones y anuncios.</li>
+        </ul>
+        <p id="footer">© 2023 Luca Conesa - ADIVINADIVINADOR</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
